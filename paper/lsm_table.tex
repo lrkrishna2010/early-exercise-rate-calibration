@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{LSM American-put prices versus the binomial benchmark (Black--Scholes world).}
+\label{tab:lsm}
+\small
+\begin{tabular}{rrrrr}
+\toprule
+Strike & LSM & Binomial & European & Early-ex.\ premium \\
+\midrule
+80 & 0.729 & 0.723 & 0.687 & 0.036 \\
+90 & 2.468 & 2.473 & 2.310 & 0.162 \\
+100 & 6.073 & 6.090 & 5.574 & 0.516 \\
+110 & 11.950 & 11.973 & 10.675 & 1.298 \\
+120 & 20.090 & 20.136 & 17.395 & 2.741 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize\itshape Notes: $S_0=100$, $r=5\%$, $\sigma=20\%$, $T=1$. LSM uses 200{,}000 antithetic paths, 50 exercise dates and a degree-3 polynomial basis; the binomial benchmark uses 2{,}000 steps. LSM matches the benchmark to within Monte Carlo error throughout, and the early-exercise premium over the European put grows with moneyness.}
+\end{table}

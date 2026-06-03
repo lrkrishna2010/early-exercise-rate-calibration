@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Hull--White calibration and synthetic-recovery test.}
+\label{tab:hw}
+\small
+\begin{tabular}{lrr}
+\toprule
+& Mean reversion $a$ & Volatility $\sigma$ \\
+\midrule
+Calibrated to market surface & 0.0200 & 0.01308 \\
+\midrule
+Synthetic: true & 0.0800 & 0.01200 \\
+Synthetic: recovered & 0.0800 & 0.01200 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize\itshape Notes: Hull--White $(a,\sigma)$ calibrated to 36 ATM payer swaptions by minimising squared price error, with the model fitted exactly to the bootstrapped Treasury curve. Mean reversion reaches its lower search bound, reflecting a single factor's difficulty in matching the full expiry/tenor structure. The synthetic test recovers known parameters exactly, confirming the optimiser.}
+\end{table}

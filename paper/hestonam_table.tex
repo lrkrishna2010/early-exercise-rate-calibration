@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{American versus European put under Heston dynamics.}
+\label{tab:hestonam}
+\small
+\begin{tabular}{rrrr}
+\toprule
+Strike & American (LSM) & European (COS) & Early-ex.\ premium \\
+\midrule
+90 & 3.175 & 3.062 & 0.113 \\
+100 & 5.669 & 5.442 & 0.227 \\
+110 & 10.253 & 9.513 & 0.740 \\
+\bottomrule
+\end{tabular}
+\\[2pt]{\footnotesize\itshape Notes: Heston parameters $\kappa=5.25$, $\theta=0.054$, $\xi=1.66$, $\rho=-0.64$, $v_0=0.022$ (from the equity calibration), $S_0=100$, $r=5\%$, $T=1$. The European leg is priced by the COS method; the American leg by LSM on simulated Heston paths. No closed form exists for the American Heston price, so LSM is the practical route.}
+\end{table}
